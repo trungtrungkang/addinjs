@@ -1,5 +1,11 @@
  var utils = require('./utils');
- var _services = {};
+ var logger = require('./logger');
+ var evaluators = require('./evaluators');
+ 
+ var _services = {
+     //default services
+     evaluators: evaluators
+ };
  
  module.exports = {
     get: function (name, throwError) {

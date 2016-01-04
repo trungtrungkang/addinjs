@@ -1001,11 +1001,6 @@ define(function (require) {
         var _evaluators = {};
 
         return {
-            lazyload: function (name, callback) {
-                var lzEvaluator = new LazyLoadEvaluator(name, callback);
-                this.set(name, lzEvaluator);
-                return lzEvaluator;
-            },
             set: function (name, evaluator) {
                 _evaluators[name] = evaluator;
             },
