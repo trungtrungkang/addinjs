@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AddIn name="addinjs" version="0.0.1" author="safe.cash">
+    <Runtime>
+        <Import name="addinjs.core" path="doozers-evaluators">
+            <Doozer name="Class" point="doozers.Class"/>
+            <Doozer name="Listen" point="doozers.Listen"/>
+            
+            <ConditionEvaluator name="Hidden" point="evaluators.Hidden"/>
+        </Import>
+    </Runtime>
+</AddIn>
